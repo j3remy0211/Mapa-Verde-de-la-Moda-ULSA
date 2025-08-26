@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vístete con Conciencia - Mapa Verde de la Moda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-ulsa-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-10 w-auto">
+                        <div class="ml-2 text-ulsa-gray text-sm">Mapa Verde de la Moda</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Inicio</a>
+                    <a href="fast-fashion.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">¿Qué es Fast Fashion?</a>
+                    <a href="proyecto.html" class="text-ulsa-green font-medium">Vístete con Conciencia</a>
+                    <a href="mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
+                    <a href="consejos.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Consejos</a>
+                    <a href="historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a>
+                    <a href="participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a>
+                    <a href="impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-ulsa-gray hover:text-ulsa-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Inicio</a>
+                <a href="fast-fashion.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">¿Qué es Fast Fashion?</a>
+                <a href="proyecto.html" class="block px-3 py-2 text-ulsa-green font-medium">Vístete con Conciencia</a>
+                <a href="mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
+                <a href="consejos.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Consejos</a>
+                <a href="historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a>
+                <a href="participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a>
+                <a href="impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-ulsa-green to-green-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Vístete con Conciencia</h1>
+            <p class="text-xl opacity-90">Una iniciativa de ULSA para promover la moda sostenible en Nicaragua</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Project Description -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-ulsa-gray mb-6">Sobre Nuestro Proyecto</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    "Vístete con Conciencia" es una iniciativa de la Universidad La Salle de León que busca 
+                    crear conciencia sobre la importancia de la moda sostenible y proporcionar alternativas 
+                    prácticas para que nuestra comunidad universitaria y la población en general puedan 
+                    vestir de manera más responsable con el medio ambiente.
+                </p>
+            </div>
+        </section>
+
+        <!-- Objectives -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Nuestros Objetivos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-ulsa-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-4">Educar</h3>
+                    <p class="text-gray-600">Informar sobre los impactos negativos del fast fashion y las alternativas sostenibles disponibles.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-ulsa-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-4">Conectar</h3>
+                    <p class="text-gray-600">Crear una red de lugares locales que promuevan la moda sostenible y el comercio responsable.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-ulsa-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-4">Transformar</h3>
+                    <p class="text-gray-600">Impulsar un cambio positivo en los hábitos de consumo de moda de nuestra comunidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Do It -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">¿Cómo lo Hacemos?</h2>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-ulsa-green rounded-full flex items-center justify-center text-white font-semibold">1</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-ulsa-gray mb-2">Investigación y Mapeo</h3>
+                                <p class="text-gray-600">Identificamos y documentamos lugares locales que ofrecen alternativas sostenibles de moda.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-ulsa-green rounded-full flex items-center justify-center text-white font-semibold">2</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-ulsa-gray mb-2">Plataforma Digital</h3>
+                                <p class="text-gray-600">Creamos un espacio digital accesible con recursos, consejos y un mapa interactivo.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-ulsa-green rounded-full flex items-center justify-center text-white font-semibold">3</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-ulsa-gray mb-2">Participación Comunitaria</h3>
+                                <p class="text-gray-600">Fomentamos la participación activa a través de formularios, testimonios y sugerencias.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-ulsa-green rounded-full flex items-center justify-center text-white font-semibold">4</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-ulsa-gray mb-2">Medición de Impacto</h3>
+                                <p class="text-gray-600">Monitoreamos y medimos el alcance e impacto de nuestras iniciativas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-ulsa-gray mb-6">Nuestro Equipo</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-ulsa-green rounded-full"></div>
+                            <span class="text-gray-700">Estudiantes investigadores</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-ulsa-green rounded-full"></div>
+                            <span class="text-gray-700">Docentes mentores</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-ulsa-green rounded-full"></div>
+                            <span class="text-gray-700">Colaboradores comunitarios</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-ulsa-green rounded-full"></div>
+                            <span class="text-gray-700">Especialistas en sostenibilidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expected Impact -->
+        <section class="mb-16">
+            <div class="bg-ulsa-green text-white rounded-lg p-8">
+                <h2 class="text-3xl font-bold mb-8 text-center">Impacto Esperado</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">500+</div>
+                        <p class="opacity-90">Personas alcanzadas en el primer año</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">50+</div>
+                        <p class="opacity-90">Lugares sostenibles mapeados</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">20%</div>
+                        <p class="opacity-90">Reducción estimada en compras de fast fashion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <h2 class="text-3xl font-bold text-ulsa-gray mb-6">¡Únete al Cambio!</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+                Tu participación es fundamental para el éxito de este proyecto. Explora nuestro mapa verde, 
+                comparte tus experiencias y ayúdanos a construir una comunidad más consciente sobre la moda sostenible.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mapa.html" class="bg-ulsa-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                    Explorar Mapa Verde
+                </a>
+                <a href="participa.html" class="border-2 border-ulsa-green text-ulsa-green px-8 py-3 rounded-lg font-semibold hover:bg-ulsa-green hover:text-white transition-colors">
+                    Participar Ahora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ulsa-gray text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 flex items-center">
+                    <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="text-sm opacity-75">¡Aprendemos para Servir!</div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-75 mb-2">Proyecto "Vístete con Conciencia"</p>
+                    <p class="text-xs opacity-50">Universidad La Salle León, Nicaragua</p>
+                    <p class="text-xs opacity-50 mt-1">Uso responsable - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

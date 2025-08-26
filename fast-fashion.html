@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es Fast Fashion? - Mapa Verde de la Moda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-ulsa-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-10 w-auto">
+                        <div class="ml-2 text-ulsa-gray text-sm">Mapa Verde de la Moda</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Inicio</a>
+                    <a href="fast-fashion.html" class="text-ulsa-green font-medium">¿Qué es Fast Fashion?</a>
+                    <a href="proyecto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Vístete con Conciencia</a>
+                    <a href="mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
+                    <a href="consejos.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Consejos</a>
+                    <a href="historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a>
+                    <a href="participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a>
+                    <a href="impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-ulsa-gray hover:text-ulsa-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Inicio</a>
+                <a href="fast-fashion.html" class="block px-3 py-2 text-ulsa-green font-medium">¿Qué es Fast Fashion?</a>
+                <a href="proyecto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Vístete con Conciencia</a>
+                <a href="mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
+                <a href="consejos.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Consejos</a>
+                <a href="historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a>
+                <a href="participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a>
+                <a href="impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-red-500 to-red-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">¿Qué es Fast Fashion?</h1>
+            <p class="text-xl opacity-90">Conoce el impacto de la moda rápida en nuestro planeta</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Definition Section -->
+        <section class="mb-16">
+            <div class="bg-gray-50 rounded-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold text-ulsa-gray mb-6">Fast Fashion: La Moda Rápida</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    La <strong>Fast Fashion</strong> o "moda rápida" es un modelo de negocio que se basa en la producción 
+                    masiva de ropa barata que imita las últimas tendencias de la moda. Este sistema prioriza la velocidad 
+                    y el bajo costo sobre la calidad y la sostenibilidad.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Las marcas de fast fashion lanzan nuevas colecciones cada pocas semanas, fomentando un consumo 
+                    excesivo y la idea de que la ropa es desechable.
+                </p>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray mb-8 text-center">Datos Alarmantes</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center bg-red-50 p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-red-600 mb-2">93 mil millones</div>
+                    <p class="text-sm text-gray-600">metros cúbicos de agua utilizados anualmente</p>
+                </div>
+                <div class="text-center bg-red-50 p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-red-600 mb-2">10%</div>
+                    <p class="text-sm text-gray-600">de las emisiones globales de carbono</p>
+                </div>
+                <div class="text-center bg-red-50 p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-red-600 mb-2">92 millones</div>
+                    <p class="text-sm text-gray-600">de toneladas de desechos textiles anuales</p>
+                </div>
+                <div class="text-center bg-red-50 p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-red-600 mb-2">7 veces</div>
+                    <p class="text-sm text-gray-600">más ropa compramos que en 1980</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray mb-8">Problemas del Fast Fashion</h2>
+            <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Impacto Ambiental</h3>
+                        <p class="text-gray-600">Contaminación del agua, emisiones de CO2, uso excesivo de recursos naturales y generación masiva de residuos textiles.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Explotación Laboral</h3>
+                        <p class="text-gray-600">Condiciones de trabajo precarias, salarios injustos y jornadas laborales excesivas en países en desarrollo.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Cultura del Descarte</h3>
+                        <p class="text-gray-600">Promueve el consumismo excesivo y la mentalidad de "usar y tirar", devaluando el trabajo artesanal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="mb-16">
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold text-ulsa-gray mb-4">¿Quieres saber más?</h3>
+                <p class="text-gray-600 mb-6">Mira este video educativo sobre el impacto del fast fashion</p>
+                <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
+                    <div class="text-gray-500">
+                        <svg class="w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-sm">Video placeholder - Insertar desde YouTube o Google Drive</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspiration Quote -->
+        <section class="text-center">
+            <div class="bg-ulsa-green text-white rounded-lg p-8">
+                <blockquote class="text-2xl font-medium mb-4">
+                    "El cambio climático no es solo un problema ambiental, es un problema de justicia social."
+                </blockquote>
+                <p class="text-lg opacity-90">- Vandana Shiva, activista ambiental</p>
+                <div class="mt-8">
+                    <a href="proyecto.html" class="bg-white text-ulsa-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+                        Conoce Nuestro Proyecto
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ulsa-gray text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 flex items-center">
+                    <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="text-sm opacity-75">¡Aprendemos para Servir!</div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-75 mb-2">Proyecto "Vístete con Conciencia"</p>
+                    <p class="text-xs opacity-50">Universidad La Salle León, Nicaragua</p>
+                    <p class="text-xs opacity-50 mt-1">Uso responsable - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

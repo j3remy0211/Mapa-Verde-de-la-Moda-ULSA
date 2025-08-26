@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto - Mapa Verde de la Moda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-ulsa-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-10 w-auto">
+                        <div class="ml-2 text-ulsa-gray text-sm">Mapa Verde de la Moda</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Inicio</a>
+                    <a href="fast-fashion.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">¿Qué es Fast Fashion?</a>
+                    <a href="proyecto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Vístete con Conciencia</a>
+                    <a href="mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
+                    <a href="consejos.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Consejos</a>
+                    <a href="historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a>
+                    <a href="participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a>
+                    <a href="impacto.html" class="text-ulsa-green font-medium">Impacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-ulsa-gray hover:text-ulsa-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Inicio</a>
+                <a href="fast-fashion.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">¿Qué es Fast Fashion?</a>
+                <a href="proyecto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Vístete con Conciencia</a>
+                <a href="mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
+                <a href="consejos.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Consejos</a>
+                <a href="historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a>
+                <a href="participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a>
+                <a href="impacto.html" class="block px-3 py-2 text-ulsa-green font-medium">Impacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-ulsa-green to-green-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Nuestro Impacto</h1>
+            <p class="text-xl opacity-90">Midiendo el cambio positivo que estamos generando juntos</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Key Metrics -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Métricas Principales</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center border-t-4 border-ulsa-green">
+                    <div class="text-4xl font-bold text-ulsa-green mb-2" id="counter-visitors">1,247</div>
+                    <p class="text-gray-600 font-semibold">Visitantes del Sitio</p>
+                    <p class="text-sm text-gray-500 mt-2">En los últimos 3 meses</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center border-t-4 border-blue-500">
+                    <div class="text-4xl font-bold text-blue-500 mb-2" id="counter-locations">23</div>
+                    <p class="text-gray-600 font-semibold">Lugares Mapeados</p>
+                    <p class="text-sm text-gray-500 mt-2">Lugares sostenibles registrados</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center border-t-4 border-purple-500">
+                    <div class="text-4xl font-bold text-purple-500 mb-2" id="counter-downloads">189</div>
+                    <p class="text-gray-600 font-semibold">Descargas de Guía</p>
+                    <p class="text-sm text-gray-500 mt-2">Guía de moda sostenible</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center border-t-4 border-green-500">
+                    <div class="text-4xl font-bold text-green-500 mb-2" id="counter-participants">67</div>
+                    <p class="text-gray-600 font-semibold">Participantes Activos</p>
+                    <p class="text-sm text-gray-500 mt-2">Personas que han contribuido</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Categories -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Categorías de Impacto</h2>
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Environmental Impact -->
+                <div class="bg-green-50 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-green-700">Impacto Ambiental</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Prendas rescatadas del descarte</span>
+                            <span class="font-bold text-green-600">~340</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Litros de agua ahorrados</span>
+                            <span class="font-bold text-green-600">~850,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Reducción CO2 (kg)</span>
+                            <span class="font-bold text-green-600">~2,040</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Impact -->
+                <div class="bg-blue-50 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-700">Impacto Social</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Personas sensibilizadas</span>
+                            <span class="font-bold text-blue-600">1,200+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Negocios locales apoyados</span>
+                            <span class="font-bold text-blue-600">23</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Comunidades conectadas</span>
+                            <span class="font-bold text-blue-600">5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational Impact -->
+                <div class="bg-purple-50 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-purple-700">Impacto Educativo</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Recursos educativos compartidos</span>
+                            <span class="font-bold text-purple-600">15</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Talleres realizados</span>
+                            <span class="font-bold text-purple-600">8</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Estudiantes involucrados</span>
+                            <span class="font-bold text-purple-600">156</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Growth Chart Placeholder -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-8">Crecimiento del Proyecto</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+                    <div class="text-center text-gray-500">
+                        <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                        <p class="text-lg">Gráfico de crecimiento</p>
+                        <p class="text-sm mt-2">Se integrará con Google Analytics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Historias de Éxito</h2>
+            <div class="grid lg:grid-cols-2 gap-8">
+                
+                <div class="bg-gradient-to-r from-ulsa-green to-green-600 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Boutique Segunda Oportunidad</h3>
+                    <p class="mb-4 opacity-90">
+                        "Desde que aparecimos en el Mapa Verde, hemos visto un aumento del 40% en nuestras ventas. 
+                        Muchos estudiantes de ULSA nos visitan regularmente."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Martha Rodríguez</p>
+                            <p class="text-sm opacity-75">Propietaria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Taller de Costura María</h3>
+                    <p class="mb-4 opacity-90">
+                        "El proyecto nos ha conectado con una nueva generación de clientes. 
+                        Los jóvenes vienen a aprender a reparar su ropa, no solo a comprar nueva."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold">María González</p>
+                            <p class="text-sm opacity-75">Maestra Costurera</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Goals -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Metas para el Próximo Año</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-ulsa-green mb-2">50</div>
+                    <p class="text-gray-600 font-semibold mb-2">Lugares Mapeados</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="bg-ulsa-green h-2 rounded-full" style="width: 46%"></div>
+                    </div>
+                    <p class="text-sm text-gray-500">46% completado</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-blue-500 mb-2">2,000</div>
+                    <p class="text-gray-600 font-semibold mb-2">Visitantes Mensuales</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 62%"></div>
+                    </div>
+                    <p class="text-sm text-gray-500">62% completado</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-purple-500 mb-2">500</div>
+                    <p class="text-gray-600 font-semibold mb-2">Descargas de Guía</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="bg-purple-500 h-2 rounded-full" style="width: 38%"></div>
+                    </div>
+                    <p class="text-sm text-gray-500">38% completado</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-green-500 mb-2">10</div>
+                    <p class="text-gray-600 font-semibold mb-2">Talleres Realizados</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                    <p class="text-sm text-gray-500">80% completado</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <div class="bg-gradient-to-r from-ulsa-green to-green-600 text-white rounded-lg p-8">
+                <h2 class="text-3xl font-bold mb-4">¡Sé Parte del Cambio!</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Cada acción cuenta. Tu participación nos ayuda a generar un impacto mayor 
+                    en nuestra comunidad y el medio ambiente.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="participa.html" class="bg-white text-ulsa-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Participar Ahora
+                    </a>
+                    <a href="mapa.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-ulsa-green transition-colors">
+                        Explorar Mapa
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ulsa-gray text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 flex items-center">
+                    <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="text-sm opacity-75">¡Aprendemos para Servir!</div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-75 mb-2">Proyecto "Vístete con Conciencia"</p>
+                    <p class="text-xs opacity-50">Universidad La Salle León, Nicaragua</p>
+                    <p class="text-xs opacity-50 mt-1">Uso responsable - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

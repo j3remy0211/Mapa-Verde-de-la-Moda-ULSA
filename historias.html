@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias y Testimonios - Mapa Verde de la Moda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-ulsa-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-10 w-auto">
+                        <div class="ml-2 text-ulsa-gray text-sm">Mapa Verde de la Moda</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Inicio</a>
+                    <a href="fast-fashion.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">¿Qué es Fast Fashion?</a>
+                    <a href="proyecto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Vístete con Conciencia</a>
+                    <a href="mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
+                    <a href="consejos.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Consejos</a>
+                    <a href="historias.html" class="text-ulsa-green font-medium">Historias</a>
+                    <a href="participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a>
+                    <a href="impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-ulsa-gray hover:text-ulsa-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Inicio</a>
+                <a href="fast-fashion.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">¿Qué es Fast Fashion?</a>
+                <a href="proyecto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Vístete con Conciencia</a>
+                <a href="mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
+                <a href="consejos.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Consejos</a>
+                <a href="historias.html" class="block px-3 py-2 text-ulsa-green font-medium">Historias</a>
+                <a href="participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a>
+                <a href="impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-ulsa-green to-green-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Historias y Testimonios</h1>
+            <p class="text-xl opacity-90">Experiencias reales de nuestra comunidad en el camino hacia la moda sostenible</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Featured Story -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-ulsa-green to-green-600 text-white rounded-lg p-8 md:p-12">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Historia Destacada</h2>
+                        <blockquote class="text-lg italic mb-4 opacity-90">
+                            "Cuando comenzé a comprar ropa de segunda mano, no solo ahorré dinero, sino que descubrí mi propio estilo único. Ahora tengo un armario lleno de piezas especiales que cuentan historias."
+                        </blockquote>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-ulsa-green" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">María José Herrera</p>
+                                <p class="opacity-75 text-sm">Estudiante de Diseño Gráfico, ULSA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-4">👗</div>
+                        <h3 class="text-xl font-semibold mb-2">Su Impacto</h3>
+                        <div class="space-y-2 text-sm opacity-90">
+                            <p>• 80% menos gasto en ropa</p>
+                            <p>• 15 prendas rescatadas del descarte</p>
+                            <p>• 3 amigas inspiradas a cambiar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Grid -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Lo que Dice Nuestra Comunidad</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-ulsa-green rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-ulsa-gray">Carlos Mendoza</h3>
+                            <p class="text-sm text-gray-500">Profesor ULSA</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic">
+                        "El proyecto me abrió los ojos sobre el impacto ambiental de mis decisiones de compra. Ahora busco calidad sobre cantidad."
+                    </blockquote>
+                    <div class="flex items-center mt-4 text-yellow-500">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-ulsa-gray">Ana Lucía Torres</h3>
+                            <p class="text-sm text-gray-500">Estudiante de Psicología</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic">
+                        "Organicé mi primer intercambio de ropa con amigas. Fue increíble ver cómo lo que ya no usaba se convertía en el tesoro de otra persona."
+                    </blockquote>
+                    <div class="flex items-center mt-4 text-yellow-500">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-ulsa-gray">Roberto Vásquez</h3>
+                            <p class="text-sm text-gray-500">Comunidad General</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic">
+                        "Encontré mi lugar favorito para reparar zapatos gracias al mapa. El zapatero don Miguel hace maravillas y mis zapatos duran años."
+                    </blockquote>
+                    <div class="flex items-center mt-4 text-yellow-500">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-ulsa-gray">Sofía Morales</h3>
+                            <p class="text-sm text-gray-500">Egresada ULSA</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic">
+                        "Aprendí a coser y ahora reparo mi propia ropa. Es muy satisfactorio darle una segunda vida a las prendas que amo."
+                    </blockquote>
+                    <div class="flex items-center mt-4 text-yellow-500">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-ulsa-gray">Diana Restrepo</h3>
+                            <p class="text-sm text-gray-500">Estudiante de Comunicación</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic">
+                        "Mi armario cápsula cambió mi vida. Ahora me visto mejor con menos ropa y sé que cada prenda tiene un propósito."
+                    </blockquote>
+                    <div class="flex items-center mt-4 text-yellow-500">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-ulsa-gray">Luis Martínez</h3>
+                            <p class="text-sm text-gray-500">Estudiante de Ingeniería</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic">
+                        "Como hombre, pensaba que la moda sostenible no era para mí. El proyecto me mostró que todos podemos contribuir al cambio."
+                    </blockquote>
+                    <div class="flex items-center mt-4 text-yellow-500">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Wall Placeholder -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-8">Muro Colaborativo</h2>
+            <div class="bg-gray-100 rounded-lg p-12 text-center">
+                <div class="text-6xl mb-4">📝</div>
+                <h3 class="text-2xl font-semibold text-ulsa-gray mb-4">¡Comparte tu Historia!</h3>
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Aquí se integrará un muro colaborativo con Padlet donde la comunidad podrá compartir 
+                    fotos, experiencias y consejos sobre moda sostenible.
+                </p>
+                <button class="bg-ulsa-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                    Integrar Padlet
+                </button>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <div class="bg-gradient-to-r from-ulsa-green to-green-600 text-white rounded-lg p-8">
+                <h2 class="text-3xl font-bold mb-4">¿Tienes una Historia que Contar?</h2>
+                <p class="text-xl mb-8 opacity-90">Comparte tu experiencia y ayuda a inspirar a otros en su camino hacia la moda sostenible</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="participa.html" class="bg-white text-ulsa-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Compartir mi Historia
+                    </a>
+                    <a href="consejos.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-ulsa-green transition-colors">
+                        Ver Consejos
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ulsa-gray text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 flex items-center">
+                    <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="text-sm opacity-75">¡Aprendemos para Servir!</div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-75 mb-2">Proyecto "Vístete con Conciencia"</p>
+                    <p class="text-xs opacity-50">Universidad La Salle León, Nicaragua</p>
+                    <p class="text-xs opacity-50 mt-1">Uso responsable - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

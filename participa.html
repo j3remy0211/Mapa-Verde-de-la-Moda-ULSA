@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participa - Mapa Verde de la Moda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-ulsa-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-10 w-auto">
+                        <div class="ml-2 text-ulsa-gray text-sm">Mapa Verde de la Moda</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Inicio</a>
+                    <a href="fast-fashion.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">¿Qué es Fast Fashion?</a>
+                    <a href="proyecto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Vístete con Conciencia</a>
+                    <a href="mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
+                    <a href="consejos.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Consejos</a>
+                    <a href="historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a>
+                    <a href="participa.html" class="text-ulsa-green font-medium">Participa</a>
+                    <a href="impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-ulsa-gray hover:text-ulsa-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Inicio</a>
+                <a href="fast-fashion.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">¿Qué es Fast Fashion?</a>
+                <a href="proyecto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Vístete con Conciencia</a>
+                <a href="mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
+                <a href="consejos.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Consejos</a>
+                <a href="historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a>
+                <a href="participa.html" class="block px-3 py-2 text-ulsa-green font-medium">Participa</a>
+                <a href="impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-ulsa-green to-green-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">¡Participa con Nosotros!</h1>
+            <p class="text-xl opacity-90">Tu voz y experiencia son fundamentales para construir una moda más sostenible</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Participation Options -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Formas de Participar</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-ulsa-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-3">Sugiere un Lugar</h3>
+                    <p class="text-gray-600 mb-4">¿Conoces un lugar sostenible que debería estar en nuestro mapa? ¡Compártelo!</p>
+                    <button onclick="showForm('lugar')" class="bg-ulsa-green text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                        Sugerir Lugar
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-3">Comparte tu Historia</h3>
+                    <p class="text-gray-600 mb-4">Cuéntanos tu experiencia con la moda sostenible e inspira a otros.</p>
+                    <button onclick="showForm('historia')" class="bg-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                        Compartir Historia
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-3">Sugiere Mejoras</h3>
+                    <p class="text-gray-600 mb-4">¿Tienes ideas para mejorar nuestro proyecto? ¡Queremos escucharte!</p>
+                    <button onclick="showForm('mejora')" class="bg-purple-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
+                        Sugerir Mejora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Forms Section -->
+        <section class="mb-16">
+            <div id="form-container" class="hidden">
+                <!-- Lugar Form -->
+                <div id="form-lugar" class="form-content hidden bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-ulsa-gray mb-6">Sugiere un Lugar Sostenible</h3>
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-ulsa-gray mb-2">Nombre del Lugar *</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Ej: Boutique Segunda Oportunidad" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-ulsa-gray mb-2">Tipo de Lugar *</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="segunda-mano">Tienda de Segunda Mano</option>
+                                    <option value="donacion">Centro de Donación</option>
+                                    <option value="taller">Taller de Reparación</option>
+                                    <option value="intercambio">Lugar de Intercambio</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Dirección *</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Dirección completa del lugar" required>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-ulsa-gray mb-2">Teléfono</label>
+                                <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Número de contacto">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-ulsa-gray mb-2">Horario</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Ej: Lun-Sáb 9AM-6PM">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Descripción *</label>
+                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none h-24" placeholder="Describe qué hace este lugar especial y por qué debería estar en el mapa" required></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Tu Nombre</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Nombre (opcional)">
+                        </div>
+                        <div class="flex gap-4">
+                            <button type="submit" class="bg-ulsa-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                                Enviar Sugerencia
+                            </button>
+                            <button type="button" onclick="hideForm()" class="bg-gray-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors">
+                                Cancelar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Historia Form -->
+                <div id="form-historia" class="form-content hidden bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-ulsa-gray mb-6">Comparte tu Historia</h3>
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-ulsa-gray mb-2">Tu Nombre *</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Nombre completo" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-ulsa-gray mb-2">Relación con ULSA</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="estudiante">Estudiante</option>
+                                    <option value="profesor">Profesor</option>
+                                    <option value="egresado">Egresado</option>
+                                    <option value="comunidad">Comunidad General</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Título de tu Historia *</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Un título atractivo para tu experiencia" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Tu Historia *</label>
+                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none h-32" placeholder="Cuéntanos tu experiencia con la moda sostenible. ¿Qué te motivó a cambiar? ¿Qué has aprendido? ¿Cómo ha impactado tu vida?" required></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Consejo Principal</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Un consejo que le darías a alguien que está empezando">
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <input type="checkbox" id="publicar" class="text-ulsa-green focus:ring-ulsa-green">
+                            <label for="publicar" class="text-sm text-ulsa-gray">Autorizo la publicación de mi historia en el sitio web</label>
+                        </div>
+                        <div class="flex gap-4">
+                            <button type="submit" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                                Compartir Historia
+                            </button>
+                            <button type="button" onclick="hideForm()" class="bg-gray-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors">
+                                Cancelar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Mejora Form -->
+                <div id="form-mejora" class="form-content hidden bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-ulsa-gray mb-6">Sugiere una Mejora</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Área de Mejora *</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" required>
+                                <option value="">Selecciona un área</option>
+                                <option value="mapa">Mapa Verde</option>
+                                <option value="contenido">Contenido Educativo</option>
+                                <option value="navegacion">Navegación del Sitio</option>
+                                <option value="funcionalidad">Funcionalidad</option>
+                                <option value="diseño">Diseño</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Título de la Sugerencia *</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Resume tu sugerencia en pocas palabras" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Descripción Detallada *</label>
+                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none h-32" placeholder="Describe tu sugerencia en detalle. ¿Qué problema resuelve? ¿Cómo mejoraría la experiencia?" required></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Prioridad</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none">
+                                <option value="baja">Baja - Sería bueno tenerlo</option>
+                                <option value="media">Media - Mejoraría la experiencia</option>
+                                <option value="alta">Alta - Es muy importante</option>
+                                <option value="critica">Crítica - Afecta la funcionalidad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-ulsa-gray mb-2">Tu Nombre</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-ulsa-green focus:outline-none" placeholder="Nombre (opcional)">
+                        </div>
+                        <div class="flex gap-4">
+                            <button type="submit" class="bg-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
+                                Enviar Sugerencia
+                            </button>
+                            <button type="button" onclick="hideForm()" class="bg-gray-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors">
+                                Cancelar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="mb-16">
+            <div class="bg-gray-50 rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-ulsa-gray text-center mb-8">Contacta al Equipo ULSA</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-ulsa-green rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Email del Proyecto</h3>
+                        <p class="text-gray-600">mapaverde@ulsa.edu.ni</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-ulsa-green rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Ubicación</h3>
+                        <p class="text-gray-600">Universidad La Salle<br>León, Nicaragua</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ulsa-gray text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 flex items-center">
+                    <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="text-sm opacity-75">¡Aprendemos para Servir!</div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-75 mb-2">Proyecto "Vístete con Conciencia"</p>
+                    <p class="text-xs opacity-50">Universidad La Salle León, Nicaragua</p>
+                    <p class="text-xs opacity-50 mt-1">Uso responsable - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

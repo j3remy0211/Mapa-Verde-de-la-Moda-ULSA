@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos Sostenibles - Mapa Verde de la Moda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-ulsa-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-10 w-auto">
+                        <div class="ml-2 text-ulsa-gray text-sm">Mapa Verde de la Moda</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Inicio</a>
+                    <a href="fast-fashion.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">¿Qué es Fast Fashion?</a>
+                    <a href="proyecto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Vístete con Conciencia</a>
+                    <a href="mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
+                    <a href="consejos.html" class="text-ulsa-green font-medium">Consejos</a>
+                    <a href="historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a>
+                    <a href="participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a>
+                    <a href="impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-ulsa-gray hover:text-ulsa-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Inicio</a>
+                <a href="fast-fashion.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">¿Qué es Fast Fashion?</a>
+                <a href="proyecto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Vístete con Conciencia</a>
+                <a href="mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
+                <a href="consejos.html" class="block px-3 py-2 text-ulsa-green font-medium">Consejos</a>
+                <a href="historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a>
+                <a href="participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a>
+                <a href="impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-ulsa-green to-green-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Consejos para Vestir Sosteniblemente</h1>
+            <p class="text-xl opacity-90">Guía práctica para una moda más consciente y responsable</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Top 10 Tips -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Top 10 Prácticas Sostenibles</h2>
+            <div class="grid lg:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Compra Menos, Elige Mejor</h3>
+                            <p class="text-gray-600">Invierte en prendas de calidad que duren más tiempo. Una pieza durable es mejor que diez baratas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Cuida tu Ropa</h3>
+                            <p class="text-gray-600">Lava en frío, seca al aire libre y guarda correctamente. El cuidado adecuado extiende la vida útil de las prendas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Repara y Modifica</h3>
+                            <p class="text-gray-600">Antes de desechar, considera reparar. Cambiar botones, arreglar costuras o modificar el corte puede dar nueva vida a tus prendas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">4</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Compra de Segunda Mano</h3>
+                            <p class="text-gray-600">Explora tiendas de segunda mano, mercados vintage y plataformas online para encontrar piezas únicas y sostenibles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">5</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Intercambia con Amigos</h3>
+                            <p class="text-gray-600">Organiza intercambios de ropa con amigos y familiares. Lo que ya no usas puede ser perfecto para otra persona.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">6</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Dona Responsablemente</h3>
+                            <p class="text-gray-600">Dona ropa en buen estado a organizaciones locales. Asegúrate de que las prendas puedan ser realmente utilizadas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">7</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Lee las Etiquetas</h3>
+                            <p class="text-gray-600">Busca materiales naturales, orgánicos o reciclados. Evita mezclas sintéticas que no son biodegradables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">8</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Apoya Marcas Sostenibles</h3>
+                            <p class="text-gray-600">Investiga y apoya marcas que tengan prácticas éticas y sostenibles en su producción.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">9</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Planifica tus Compras</h3>
+                            <p class="text-gray-600">Antes de comprar, revisa tu armario y haz una lista de lo que realmente necesitas. Evita las compras impulsivas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-ulsa-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-ulsa-green rounded-full flex items-center justify-center text-white font-bold">10</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-ulsa-gray mb-2">Crea un Armario Cápsula</h3>
+                            <p class="text-gray-600">Construye un guardarropa con piezas versátiles que se combinen entre sí, maximizando las opciones con menos prendas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-ulsa-green to-green-600 text-white rounded-lg p-12 text-center">
+                <h2 class="text-3xl font-bold mb-4">Descarga Nuestra Guía Completa</h2>
+                <p class="text-xl opacity-90 mb-8">Mini e-book con todos los consejos y más información sobre moda sostenible</p>
+                <button class="bg-white text-ulsa-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Descargar PDF Gratis
+                </button>
+            </div>
+        </section>
+
+        <!-- Tips by Category -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-ulsa-gray text-center mb-12">Consejos por Categoría</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-4 text-center">Compra Inteligente</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Establece un presupuesto mensual</li>
+                        <li>• Espera 24 horas antes de comprar</li>
+                        <li>• Pregúntate: ¿Lo usaré al menos 30 veces?</li>
+                        <li>• Compra fuera de temporada</li>
+                        <li>• Investiga la marca antes de comprar</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-4 text-center">Cuidado y Mantenimiento</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Lava solo cuando sea necesario</li>
+                        <li>• Usa agua fría siempre que sea posible</li>
+                        <li>• Seca al aire libre en lugar de secadora</li>
+                        <li>• Guarda la ropa adecuadamente</li>
+                        <li>• Trata las manchas inmediatamente</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-ulsa-gray mb-4 text-center">Segunda Vida</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Repara antes de descartar</li>
+                        <li>• Transforma prendas viejas</li>
+                        <li>• Intercambia con amigos</li>
+                        <li>• Dona en buen estado</li>
+                        <li>• Recicla textiles apropiadamente</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ulsa-gray text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 flex items-center">
+                    <img src="img/Logo_ULSA_Nueva_Identidad(3).png" alt="ULSA Logo" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="text-sm opacity-75">¡Aprendemos para Servir!</div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-75 mb-2">Proyecto "Vístete con Conciencia"</p>
+                    <p class="text-xs opacity-50">Universidad La Salle León, Nicaragua</p>
+                    <p class="text-xs opacity-50 mt-1">Uso responsable - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

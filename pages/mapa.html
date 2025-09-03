@@ -60,175 +60,32 @@
         </div>
     </header>
 
-    <!-- Filter Section -->
-    <section class="bg-gray-50 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap gap-4 justify-center">
-                <button onclick="filterLocations('all')" class="filter-btn active bg-ulsa-green text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors">
-                    Todos
-                </button>
-                <button onclick="filterLocations('segunda-mano')" class="filter-btn bg-white text-ulsa-gray border-2 border-gray-300 px-6 py-2 rounded-full font-semibold hover:border-ulsa-green transition-colors">
-                    Segunda Mano
-                </button>
-                <button onclick="filterLocations('donacion')" class="filter-btn bg-white text-ulsa-gray border-2 border-gray-300 px-6 py-2 rounded-full font-semibold hover:border-ulsa-green transition-colors">
-                    Donación
-                </button>
-                <button onclick="filterLocations('talleres')" class="filter-btn bg-white text-ulsa-gray border-2 border-gray-300 px-6 py-2 rounded-full font-semibold hover:border-ulsa-green transition-colors">
-                    Talleres y Reparación
-                </button>
-                <button onclick="filterLocations('intercambio')" class="filter-btn bg-white text-ulsa-gray border-2 border-gray-300 px-6 py-2 rounded-full font-semibold hover:border-ulsa-green transition-colors">
-                    Intercambio
-                </button>
-            </div>
-        </div>
-    </section>
-
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <!-- Map Section -->
         <section class="mb-16">
             <div class="bg-gray-200 rounded-lg h-96 mb-8 flex items-center justify-center">
-                <!-- <iframe
-                class="w-full h-96 rounded-lg shadow-lg"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSP3TPuQph9ZBfbDP7a-y-99RikvOk6jY&q=León,Nicaragua"
-                frameborder="0"
-                allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe> -->
-
-                <iframe id="map" class="w-full h-96 rounded-lg shadow-lg"
-                frameborder="0" allowfullscreen loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                <iframe 
+                    src="https://www.google.com/maps/d/u/2/embed?mid=1kBd0XPSKs0xIYJt6nTg-dJec3lsB6qI&ehbc=2E312F&noprof=1" 
+                    class="w-full h-96 rounded-lg shadow-lg" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    loading="lazy">
                 </iframe>
-
-                <!-- <div class="text-center text-gray-500">
-                    <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />
-                    </svg>
-                    <p class="text-lg">Google Maps interactivo aquí</p>
-                    <p class="text-sm mt-2">Se insertará el mapa de Google My Maps</p>
-                </div> -->
             </div>
         </section>
 
-        <!-- Location Cards -->
-        <section>
-            <h2 class="text-3xl font-bold text-ulsa-gray mb-8 text-center">Lugares Destacados</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="location-grid">
-                
-                <!-- Segunda Mano -->
-                <div class="location-card bg-white rounded-lg shadow-lg overflow-hidden border hover:shadow-xl transition-shadow" data-category="segunda-mano">
-                    <div class="bg-blue-500 h-48 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold text-ulsa-gray">Boutique Segunda Oportunidad</h3>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm justify-center">Segunda</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Ropa de segunda mano de calidad a precios accesibles.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            </svg>
-                            Centro de León, Nicaragua
-                        </div>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Lun - Sáb: 9:00 AM - 6:00 PM
-                        </div>
-                    </div>
-                </div>
+        <!-- Call to Advices -->
+        <section class="text-center">
+            <h2 class="text-3xl font-bold text-ulsa-gray mb-6">Consejos</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto text-justify">
+                💡 ¿Quieres vestir con más conciencia pero no sabes por dónde empezar? Haz clic en el botón de consejos y descubre ideas prácticas, sencillas y sostenibles que pueden transformar tu forma de consumir moda. Cada pequeño cambio cuenta, y tú puedes ser parte del impacto positivo.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="./consejos.html" class="border-2 border-ulsa-green text-ulsa-green px-8 py-3 rounded-lg font-semibold hover:bg-ulsa-green hover:text-white transition-colors">
+                    Consejos y Guía
+                </a>
 
-                <!-- Donación -->
-                <div class="location-card bg-white rounded-lg shadow-lg overflow-hidden border hover:shadow-xl transition-shadow" data-category="donacion">
-                    <div class="bg-green-500 h-48 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold text-ulsa-gray">Centro de Donaciones Esperanza</h3>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Donación</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Acepta donaciones de ropa en buen estado para familias necesitadas.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            </svg>
-                            Barrio San Felipe, León
-                        </div>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Mar - Dom: 8:00 AM - 4:00 PM
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Talleres -->
-                <div class="location-card bg-white rounded-lg shadow-lg overflow-hidden border hover:shadow-xl transition-shadow" data-category="talleres">
-                    <div class="bg-yellow-500 h-48 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold text-ulsa-gray">Taller de Costura María</h3>
-                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Reparación</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Especialistas en reparación y modificación de prendas.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            </svg>
-                            Mercado Central, León
-                        </div>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Lun - Vie: 8:00 AM - 5:00 PM
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Intercambio -->
-                <div class="location-card bg-white rounded-lg shadow-lg overflow-hidden border hover:shadow-xl transition-shadow" data-category="intercambio">
-                    <div class="bg-purple-500 h-48 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                        </svg>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold text-ulsa-gray">Swap León</h3>
-                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Intercambio</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Eventos mensuales de intercambio de ropa entre la comunidad.</p>
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            </svg>
-                            Plaza Central, León
-                        </div>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 4v10m4-10v10m-8-4h12" />
-                            </svg>
-                            Primer sábado de cada mes
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>

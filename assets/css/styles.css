@@ -10,6 +10,10 @@
     --ulsa-gray: #333333;
 }
 
+#carousel img {
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
 /* Custom utility classes */
 .text-ulsa-green {
     color: var(--ulsa-green);
@@ -82,6 +86,16 @@
 /* Progress bars */
 .progress-bar {
     transition: width 1s ease-out;
+}
+
+@media (max-width: 880px) {
+    .force-desktop {
+        display: none !important;
+    }
+
+    nav .md\:hidden {
+        display: flex !important;
+    }
 }
 
 /* Mobile responsiveness fixes */

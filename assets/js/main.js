@@ -17,6 +17,65 @@ if (typeof tailwind !== 'undefined') {
     };
 }
 
+// Image carousel logic
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.getElementById("carousel");
+  const indicators = document.querySelectorAll("#indicators span");
+  const btnNext = document.getElementById("next");
+  const btnPrev = document.getElementById("prev");
+  const totalSlides = carousel.children.length;
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  const updateCarousel = (index) => {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+    indicators.forEach((dot, i) => {
+      dot.classList.toggle("bg-green-500", i === index);
+      dot.classList.toggle("bg-gray-400", i !== index);
+    });
+  };
+
+  const nextSlide = () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel(currentIndex);
+  };
+
+  const prevSlide = () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel(currentIndex);
+  };
+
+  const startAutoSlide = () => {
+    autoSlideInterval = setInterval(nextSlide, 4000);
+  };
+
+  const resetAutoSlide = () => {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+  };
+
+  btnNext.addEventListener("click", () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+
+  btnPrev.addEventListener("click", () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  indicators.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      currentIndex = i;
+      updateCarousel(currentIndex);
+      resetAutoSlide();
+    });
+  });
+
+  updateCarousel(currentIndex);
+  startAutoSlide();
+});
+
 /**
  * Mobile menu toggle functionality
  * Used across all pages for responsive navigation

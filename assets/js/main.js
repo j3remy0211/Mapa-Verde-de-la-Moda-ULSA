@@ -341,3 +341,11 @@ document.addEventListener('submit', function(e) {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const key = window._env_.GOOGLE_MAPS_API_KEY;
+  const map = document.getElementById("map");
+  if (map && key) {
+    map.src = `https://www.google.com/maps/embed/v1/place?key=${key}&q=León,Nicaragua`;
+  }
+});

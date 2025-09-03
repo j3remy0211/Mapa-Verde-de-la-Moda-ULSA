@@ -6,6 +6,7 @@
     <title>¿Qué es Fast Fashion? - Mapa Verde de la Moda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <meta http-equiv="refresh" content="3"> -->
 </head>
 <body class="bg-white">
     <!-- Navigation -->
@@ -23,9 +24,9 @@
                     <a href="./proyecto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Vístete con Conciencia</a>
                     <a href="./mapa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Mapa Verde</a>
                     <a href="./consejos.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Consejos</a>
-                    <a href="./historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a>
-                    <a href="./participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a>
-                    <a href="./impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a>
+                    <!-- <a href="./historias.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Historias</a> -->
+                    <!-- <a href="./participa.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Participa</a> -->
+                    <!-- <a href="./impacto.html" class="text-ulsa-gray hover:text-ulsa-green transition-colors">Impacto</a> -->
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
@@ -45,9 +46,9 @@
                 <a href="./proyecto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Vístete con Conciencia</a>
                 <a href="./mapa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Mapa Verde</a>
                 <a href="./consejos.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Consejos</a>
-                <a href="./historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a>
-                <a href="./participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a>
-                <a href="./impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a>
+                <!-- <a href="./historias.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Historias</a> -->
+                <!-- <a href="./participa.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Participa</a> -->
+                <!-- <a href="./impacto.html" class="block px-3 py-2 text-ulsa-gray hover:text-ulsa-green">Impacto</a> -->
             </div>
         </div>
     </nav>
@@ -145,19 +146,35 @@
 
         <!-- Video Section -->
         <section class="mb-16">
-            <div class="bg-gray-100 rounded-lg p-8 text-center">
-                <h3 class="text-2xl font-bold text-ulsa-gray mb-4">¿Quieres saber más?</h3>
-                <p class="text-gray-600 mb-6">Mira este video educativo sobre el impacto del fast fashion</p>
-                <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
-                    <div class="text-gray-500">
-                        <svg class="w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Video placeholder - Insertar desde YouTube o Google Drive</p>
-                    </div>
-                </div>
+        <div class="bg-gray-100 rounded-lg p-8 text-center space-y-8">
+            <h3 class="text-2xl font-bold text-ulsa-gray mb-4">¿Quieres saber más?</h3>
+
+            <!-- Video 1 -->
+            <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/ZfhoPrrOp20"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
-        </section>
+
+            <!-- Video 2 -->
+            <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/0HZl9_MhwFc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+ 
 
         <!-- Inspiration Quote -->
         <section class="text-center">

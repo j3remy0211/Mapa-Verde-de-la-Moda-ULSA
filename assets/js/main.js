@@ -21,8 +21,8 @@ if (typeof tailwind !== 'undefined') {
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.getElementById("carousel");
   const indicators = document.querySelectorAll("#indicators span");
-  const btnNext = document.getElementById("next");
-  const btnPrev = document.getElementById("prev");
+  //const btnNext = document.getElementById("next");
+  //const btnPrev = document.getElementById("prev");
   const totalSlides = carousel.children.length;
   let currentIndex = 0;
   let autoSlideInterval;
@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startAutoSlide();
   };
 
+  /**
   btnNext.addEventListener("click", () => {
     nextSlide();
     resetAutoSlide();
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     prevSlide();
     resetAutoSlide();
   });
+  */
 
   indicators.forEach((dot, i) => {
     dot.addEventListener("click", () => {
@@ -399,12 +401,4 @@ document.addEventListener('submit', function(e) {
             alert('Por favor, completa todos los campos requeridos.');
         }
     }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const key = window._env_.GOOGLE_MAPS_API_KEY;
-  const map = document.getElementById("map");
-  if (map && key) {
-    map.src = `https://www.google.com/maps/embed/v1/place?key=${key}&q=León,Nicaragua`;
-  }
 });

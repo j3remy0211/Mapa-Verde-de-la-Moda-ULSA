@@ -54,11 +54,12 @@
     </nav>
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-ulsa-green to-green-600 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">¿Qué es Fast Fashion?</h1>
-            <p class="text-xl opacity-90">Conoce el impacto de la moda rápida en nuestro planeta</p>
-        </div>
+    <header class="relative bg-cover bg-center text-white min-h-[80vh] flex items-center justify-center" style="background-image: url('../assets/img/Horizaontales/FastFashion.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg leading-tight">¿Qué es Fast Fashion?</h1>
+        <p class="text-2xl opacity-100 drop-shadow-md">Conoce el impacto de la moda rápida en nuestro planeta</p>
+    </div>
     </header>
 
     <!-- Main Content -->
@@ -79,27 +80,58 @@
             </div>
         </section>
 
-        <!-- Statistics Section -->
+        <!-- Video introductorio sobre Fast Fashion -->
         <section class="mb-16">
-            <h2 class="text-3xl font-bold text-ulsa-gray mb-8 text-center">Datos Alarmantes</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="text-center bg-green-50 p-6 rounded-lg">
-                    <div class="text-3xl font-bold text-green-600 mb-2">93 mil millones</div>
-                    <p class="text-sm text-gray-600">metros cúbicos de agua utilizados anualmente</p>
-                </div>
-                <div class="text-center bg-green-50 p-6 rounded-lg">
-                    <div class="text-3xl font-bold text-green-600 mb-2">10%</div>
-                    <p class="text-sm text-gray-600">de las emisiones globales de carbono</p>
-                </div>
-                <div class="text-center bg-green-50 p-6 rounded-lg">
-                    <div class="text-3xl font-bold text-green-600 mb-2">92 millones</div>
-                    <p class="text-sm text-gray-600">de toneladas de desechos textiles anuales</p>
-                </div>
-                <div class="text-center bg-green-50 p-6 rounded-lg">
-                    <div class="text-3xl font-bold text-green-600 mb-2">7 veces</div>
-                    <p class="text-sm text-gray-600">más ropa compramos que en 1980</p>
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold text-ulsa-gray mb-4">El Vertedero de Ropa del Mundo</h3>
+                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/ZfhoPrrOp20"
+                    title="Video introductorio sobre Fast Fashion"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 </div>
             </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="mb-16">
+        <h2 class="text-3xl font-bold text-ulsa-gray mb-8 text-center">Datos Alarmantes</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Agua utilizada -->
+            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <img src="../assets/img/Horizaontales/DA1.jpg" alt="Agua desperdiciada por la industria textil" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
+            <div class="text-3xl font-bold text-green-600 mb-2">93 mil millones</div>
+            <p class="text-base text-gray-600">metros cúbicos de agua utilizados anualmente</p>
+            </div>
+
+            <!-- Emisiones de carbono -->
+            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <img src="../assets/img/Horizaontales/DA2.jpg" alt="Emisiones de carbono por la moda rápida" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
+            <div class="text-3xl font-bold text-green-600 mb-2">10%</div>
+            <p class="text-base text-gray-600">de las emisiones globales de carbono</p>
+            </div>
+
+            <!-- Desechos textiles -->
+            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <img src="../assets/img/Horizaontales/DA3.jpg" alt="Desechos textiles acumulados" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
+            <div class="text-3xl font-bold text-green-600 mb-2">92 millones</div>
+            <p class="text-base text-gray-600">de toneladas de desechos textiles anuales</p>
+            </div>
+
+            <!-- Consumo excesivo -->
+            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <img src="../assets/img/Horizaontales/DA4.png" alt="Consumo excesivo de ropa" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
+            <div class="text-3xl font-bold text-green-600 mb-2">7 veces</div>
+            <p class="text-base text-gray-600">más ropa compramos que en 1980</p>
+            </div>
+
+        </div>
         </section>
 
         <!-- Problems Section -->
@@ -149,18 +181,6 @@
             <div class="bg-gray-100 rounded-lg p-8 text-center space-y-8">
                 <h3 class="text-2xl font-bold text-ulsa-gray mb-4">¿Quieres saber más?</h3>
 
-                <!-- Video 1 -->
-                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
-                    <iframe
-                        class="absolute top-0 left-0 w-full h-full rounded-lg"
-                        src="https://www.youtube.com/embed/ZfhoPrrOp20"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-
                 <!-- Video 2 -->
                 <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
                     <iframe
@@ -175,20 +195,26 @@
             </div>
         </section>
  
-
         <!-- Inspiration Quote -->
-        <section class="text-center">
-            <div class="bg-ulsa-green text-white rounded-lg p-8">
-                <blockquote class="text-2xl font-medium mb-4">
-                    "El cambio climático no es solo un problema ambiental, es un problema de justicia social."
-                </blockquote>
-                <p class="text-lg opacity-90">- Vandana Shiva, activista ambiental</p>
-                <div class="mt-8">
-                    <a href="./proyecto.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-ulsa-green transition-colors">
-                        Conoce Nuestro Proyecto
-                    </a>
-                </div>
+        <section class="flex items-center justify-center py-16 px-4">
+        <div class="bg-ulsa-green text-white rounded-xl p-8 max-w-xl w-full text-center shadow-lg">
+            
+            <!-- Imagen de Vandana Shiva -->
+            <div class="flex justify-center mb-6">
+            <img src="../assets/img/Verticales/VandanaShiva.jpg" alt="Vandana Shiva" class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-md">
             </div>
+
+            <!-- Cita -->
+            <blockquote class="text-xl font-medium mb-4 leading-snug">
+            "El cambio climático no es solo un problema ambiental, es un problema de justicia social."
+            </blockquote>
+            <p class="text-base opacity-90 mb-6">– Vandana Shiva, activista ambiental</p>
+
+            <!-- Botón -->
+            <a href="./proyecto.html" class="inline-block border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-ulsa-green transition-colors">
+            Conoce Nuestro Proyecto
+            </a>
+        </div>
         </section>
     </main>
 

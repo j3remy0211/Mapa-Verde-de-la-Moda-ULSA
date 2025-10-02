@@ -48,7 +48,7 @@ Difundir el proyecto **"Vístete con Conciencia"** y ofrecer un espacio digital 
 
 - **Diseño y desarrollo:** Jeremy Benjamín Chávez Hernández
 - **Revisión institucional:** Ing. Christian Eduardo Toval Ruiz
-- **Investigación de datos:** Scouts estudiantiles
+- **Investigación de datos:** Estudiantes ULSA
 - **Colaboradores:** Comunidad ULSA
 
 ---

@@ -80,22 +80,73 @@
             </div>
         </section>
 
-        <!-- Video introductorio sobre Fast Fashion -->
+        <!-- Video introductorio sobre Fast Fashion (Short) -->
         <section class="mb-16">
-            <div class="bg-gray-100 rounded-lg p-8 text-center">
-                <h3 class="text-2xl font-bold text-ulsa-gray mb-4">El Vertedero de Ropa del Mundo</h3>
-                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
-                <iframe
-                    class="absolute top-0 left-0 w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/ZfhoPrrOp20"
-                    title="Video introductorio sobre Fast Fashion"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                </div>
+        <div class="bg-gray-100 rounded-lg p-8 text-center">
+            <h3 class="text-2xl font-bold text-ulsa-gray mb-4">Video introductorio sobre Fast Fashion</h3>
+
+            <!-- Short: 9:16 en móviles, 16:9 en pantallas grandes -->
+            <div class="relative w-full max-w-2xl mx-auto aspect-[9/16] md:aspect-video">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/9a0c2WTlsag"
+                title="Video introductorio sobre Fast Fashion"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
             </div>
+        </div>
         </section>
+
+<!-- Video + Texto lado a lado -->
+<section class="mb-16">
+  <div class="bg-gray-100 rounded-lg p-8 text-center">
+    <h3 class="text-2xl font-bold text-ulsa-gray mb-4">El Vertedero de Ropa del Mundo</h3>
+
+    <!-- Texto inicial -->
+    <p class="max-w-2xl mx-auto text-gray-700 text-justify leading-relaxed mb-6">
+      Aunque parece atractivo por sus precios accesibles y la constante renovación de estilos, 
+      el fast fashion tiene importantes consecuencias. La ropa suele ser de baja calidad, diseñada 
+      para durar poco tiempo, lo que fomenta la cultura del “usar y tirar” y genera grandes cantidades 
+      de residuos textiles. El siguiente video es un ejemplo de esto:
+    </p>
+
+    <!-- Video 2 -->
+    <div class="relative w-full max-w-2xl mx-auto aspect-video mb-10">
+      <iframe
+        class="absolute top-0 left-0 w-full h-full rounded-lg"
+        src="https://www.youtube.com/embed/ZfhoPrrOp20"
+        title="Video de vertedero de ropa"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Segundo bloque de texto -->
+    <p class="max-w-2xl mx-auto text-gray-700 text-justify leading-relaxed mb-6">
+      Además, este modelo de negocio tiene un impacto significativo en el medio ambiente. 
+      La producción masiva requiere grandes cantidades de agua, energía y productos químicos, 
+      y contribuye a la contaminación del aire y del agua. Al mismo tiempo, en muchos países, 
+      las prendas se fabrican en condiciones laborales injustas, con salarios bajos y jornadas 
+      extensas, afectando a miles de trabajadores. El siguiente video es un ejemplo de esto:
+    </p>
+
+    <!-- Video 3 -->
+    <div class="relative w-full max-w-2xl mx-auto aspect-video">
+      <iframe
+        class="absolute top-0 left-0 w-full h-full rounded-lg"
+        src="https://www.youtube.com/embed/0HZl9_MhwFc"
+        title="Video de consecuencias del fast fashion"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
 
         <!-- Statistics Section -->
         <section class="mb-16">
@@ -104,30 +155,30 @@
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 max-w-6xl mx-auto">
             
             <!-- Agua utilizada -->
-            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <div class="bg-blue-200 p-6 rounded-lg flex flex-col items-center text-center shadow">
             <img src="../assets/img/Horizaontales/DA1.jpg" alt="Agua desperdiciada por la industria textil" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
-            <div class="text-3xl font-bold text-green-600 mb-2">93 mil millones</div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">93 mil millones</div>
             <p class="text-base text-gray-600">metros cúbicos de agua utilizados anualmente</p>
             </div>
 
             <!-- Emisiones de carbono -->
-            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <div class="bg-gray-200 p-6 rounded-lg flex flex-col items-center text-center shadow">
             <img src="../assets/img/Horizaontales/DA2.jpg" alt="Emisiones de carbono por la moda rápida" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
-            <div class="text-3xl font-bold text-green-600 mb-2">10%</div>
+            <div class="text-3xl font-bold text-gray-600 mb-2">10%</div>
             <p class="text-base text-gray-600">de las emisiones globales de carbono</p>
             </div>
 
             <!-- Desechos textiles -->
-            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <div class="bg-emerald-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
             <img src="../assets/img/Horizaontales/DA3.jpg" alt="Desechos textiles acumulados" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
-            <div class="text-3xl font-bold text-green-600 mb-2">92 millones</div>
+            <div class="text-3xl font-bold text-emerald-600 mb-2">92 millones</div>
             <p class="text-base text-gray-600">de toneladas de desechos textiles anuales</p>
             </div>
 
             <!-- Consumo excesivo -->
-            <div class="bg-green-100 p-6 rounded-lg flex flex-col items-center text-center shadow">
+            <div class="bg-yellow-200 p-6 rounded-lg flex flex-col items-center text-center shadow">
             <img src="../assets/img/Horizaontales/DA4.png" alt="Consumo excesivo de ropa" class="w-full max-w-[600px] h-56 object-cover rounded mb-4">
-            <div class="text-3xl font-bold text-green-600 mb-2">7 veces</div>
+            <div class="text-3xl font-bold text-yellow-600 mb-2">7 veces</div>
             <p class="text-base text-gray-600">más ropa compramos que en 1980</p>
             </div>
 
@@ -175,28 +226,9 @@
                 </div>
             </div>
         </section>
-
-        <!-- Video Section -->
-        <section class="mb-16">
-            <div class="bg-gray-100 rounded-lg p-8 text-center space-y-8">
-                <h3 class="text-2xl font-bold text-ulsa-gray mb-4">¿Quieres saber más?</h3>
-
-                <!-- Video 2 -->
-                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 ratio -->
-                    <iframe
-                        class="absolute top-0 left-0 w-full h-full rounded-lg"
-                        src="https://www.youtube.com/embed/0HZl9_MhwFc"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </section>
  
         <!-- Inspiration Quote -->
-        <section class="flex items-center justify-center py-16 px-4">
+        <section class="flex items-center justify-center px-4">
         <div class="bg-ulsa-green text-white rounded-xl p-8 max-w-xl w-full text-center shadow-lg">
             
             <!-- Imagen de Vandana Shiva -->

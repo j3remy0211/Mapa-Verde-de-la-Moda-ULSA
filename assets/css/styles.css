@@ -8,6 +8,7 @@
 :root {
     --ulsa-green: #238935;
     --ulsa-gray: #333333;
+    --blue: #338ab3;
 }
 
 #carousel img {
@@ -17,6 +18,10 @@
 /* Custom utility classes */
 .text-ulsa-green {
     color: var(--ulsa-green);
+}
+
+.text-blue {
+    color: var(--blue);
 }
 
 .bg-ulsa-green {

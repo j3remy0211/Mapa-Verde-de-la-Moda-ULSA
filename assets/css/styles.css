@@ -306,28 +306,3 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
-
-/* Estado inicial */
-.feature-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
-}
-
-/* Cuando entra en pantalla */
-.feature-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hover: efecto flotante y color sutil */
-.feature-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-  border-color: rgba(0, 128, 0, 0.3);
-}
-
-/* Animación escalonada */
-.feature-card:nth-child(1) { transition-delay: 0.1s; }
-.feature-card:nth-child(2) { transition-delay: 0.2s; }
-.feature-card:nth-child(3) { transition-delay: 0.3s; }

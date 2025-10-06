@@ -404,7 +404,7 @@ document.addEventListener('submit', function(e) {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".shop-card, .animated-card");
+  const cards = document.querySelectorAll(".shop-card, .animated-card, .feature-card");
 
   const observer = new IntersectionObserver(
     (entries) => {

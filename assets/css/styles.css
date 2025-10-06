@@ -1,3 +1,12 @@
+* {
+  outline: 1px solid red;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* Main stylesheet for Mapa Verde de la Moda */
 /* Custom Tailwind configuration and additional styles */
 

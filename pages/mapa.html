@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-white">
     <!-- Navigation -->
@@ -54,12 +55,17 @@
     </nav>
 
     <!-- Header -->
-    <header class="relative bg-cover bg-center text-white min-h-[93vh] flex items-center justify-center" style="background-image: url('../assets/img/Horizaontales/mapa_verde.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg leading-tight">Mapa Verde de la Moda</h1>
-        <p class="bg-ulsa-green text-2xl opacity-100 drop-shadow-md">Descubre lugares sostenibles de moda en León, Nicaragua</p>
-    </div>
+    <header class="relative bg-cover bg-center text-white min-h-[93vh] flex items-center justify-center" 
+        style="background-image: url('../assets/img/Horizaontales/mapa_verde.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 w-full bg-black bg-opacity-50 py-6 sm:py-8 md:py-10 px-4 sm:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+                Mapa Verde de la Moda
+            </h1>
+            <p class="text-2xl opacity-100">
+                Descubre lugares sostenibles de moda en León, Nicaragua
+            </p>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -77,217 +83,205 @@
 
         <!-- Shops Section -->
         <section class="mb-16">
-            <h2 class="section-title">🛍️ Tiendas y <span>Showrooms</span></h2>
+            <h2 class="section-title">Tiendas y <span>Showrooms</span></h2>
             
             <div class="shops-grid">
                 
                 <!-- Tienda E& S -->
-                <div class="bg-pink-200 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Tienda E& S</h3>
-                    <img src="../assets/img/Shops/t1.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda E& S</h3>
+                    <img src="../assets/img/Shops/t1.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
                         <a href="https://maps.app.goo.gl/UvFAS6TQY8s21Yi56" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
                         <a href="https://www.instagram.com/tiendaestodoenroparati?igsh=MTdvZnN5N3lrcXVyNA==" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Lalita Showroom -->
-                <div class="bg-green-700 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Lalita Showroom</h3>
-                    <img src="../assets/img/Shops/t8.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Lalita Showroom</h3>
+                    <img src="../assets/img/Shops/t8.jpg" alt="Logo Lalita Showroom" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
                         <a href="https://maps.app.goo.gl/J5yEJ7Qz3BdvMpuQ8" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
                         <a href="https://www.instagram.com/lalita_showroom?igsh=djYwdG9qcXZ6cDJu" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Perlez Boutique -->
-                <div class="bg-gray-500 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Perlez Boutique</h3>
-                    <img src="../assets/img/Shops/t2.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/mwG5svwT5T48mXAw6" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Perlez Boutique</h3>
+                    <img src="../assets/img/Shops/t2.jpg" alt="Logo Perlez Boutique" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/mwG5svwT5T48mXAw6" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/perlez_boutique?igsh=OG9hdzl6cHZoaWt5" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/perlez_boutique?igsh=OG9hdzl6cHZoaWt5" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- La nueva Broadway -->
-                <div class="bg-blue-400 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">La nueva Broadway</h3>
-                    <img src="../assets/img/Shops/t9.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/vsqaw2kQEfJP85oy8" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">La nueva Broadway</h3>
+                    <img src="../assets/img/Shops/t9.jpg" alt="Logo La nueva Broadway" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center">
+                        <a href="https://maps.app.goo.gl/vsqaw2kQEfJP85oy8" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Megaboutique -->
-                <div class="bg-orange-300 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Megaboutique</h3>
-                    <img src="../assets/img/Shops/t3.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/MBYV4xkVMPyBhH4p6" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Megaboutique</h3>
+                    <img src="../assets/img/Shops/t3.jpg" alt="Logo Megaboutique" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/MBYV4xkVMPyBhH4p6" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/megaboutique_oficial?igsh=N2NtazMxZzMxZ25v" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/megaboutique_oficial?igsh=N2NtazMxZzMxZ25v" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Planeta Sport -->
-                <div class="bg-pink-400 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Planeta Sport</h3>
-                    <img src="../assets/img/Shops/t10.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/ekd7oKj8PZ2ZLMsZ8" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Planeta Sport</h3>
+                    <img src="../assets/img/Shops/t10.jpg" alt="Logo Planeta Sport" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/ekd7oKj8PZ2ZLMsZ8" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/planetasport62?igsh=eXN6ZzFremw0aG1o" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/planetasport62?igsh=eXN6ZzFremw0aG1o" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Euro Fashion -->
-                <div class="bg-pink-200 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Euro Fashion</h3>
-                    <img src="../assets/img/Shops/t4.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/qxw6iqmiwA5K4yTS6" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Euro Fashion</h3>
+                    <img src="../assets/img/Shops/t4.jpg" alt="Logo Euro Fashion" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/qxw6iqmiwA5K4yTS6" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/eurofashion_nic?igsh=MWo5czEwbDQzbWt5bA==" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/eurofashion_nic?igsh=MWo5czEwbDQzbWt5bA==" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Tienda Fucsia -->
-                <div class="bg-pink-300 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Tienda Fucsia</h3>
-                    <img src="../assets/img/Shops/t11.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/hpNNqDt9dNCXsN3i6" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda Fucsia</h3>
+                    <img src="../assets/img/Shops/t11.jpg" alt="Logo Tienda Fucsia" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/hpNNqDt9dNCXsN3i6" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/fucsiabolsos?igsh=MXlzbW8wZXZ0aGpv" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/fucsiabolsos?igsh=MXlzbW8wZXZ0aGpv" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Ensancha mi tienda -->
-                <div class="bg-lime-200 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Ensancha mi tienda</h3>
-                    <img src="../assets/img/Shops/t6.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/wQEFNRTJZPLdYE5q7" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Ensancha mi tienda</h3>
+                    <img src="../assets/img/Shops/t6.jpg" alt="Logo Ensancha mi tienda" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/wQEFNRTJZPLdYE5q7" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.facebook.com/share/17CxXzsGA3/?mibextid=wwXIfr" target="_blank" aria-label="Ver página en Facebook"
-                        class="bg-blue-50 text-blue-700 p-4 rounded-full hover:bg-blue-100 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.facebook.com/share/17CxXzsGA3/?mibextid=wwXIfr" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-facebook text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Peek's -->
-                <div class="bg-indigo-300 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Peek's</h3>
-                    <img src="../assets/img/Shops/t12.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/UgT8upQpJ9eG2rYQA" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Peek's</h3>
+                    <img src="../assets/img/Shops/t12.jpg" alt="Logo Peek's" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/UgT8upQpJ9eG2rYQA" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/peeks_20?igsh=MWRqcWxnenEwOGFzeQ==" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/peeks_20?igsh=MWRqcWxnenEwOGFzeQ==" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Variedades M & S León Nic -->
-                <div class="bg-gray-300 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Variedades M & S León Nic</h3>
-                    <img src="../assets/img/Shops/t5.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/77GzBEnHNmaQPsx28" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Variedades M & S León Nic</h3>
+                    <img src="../assets/img/Shops/t5.jpg" alt="Logo Variedades M & S León Nic" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center">
+                        <a href="https://maps.app.goo.gl/77GzBEnHNmaQPsx28" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- D mano en mano -->
-                <div class="bg-gray-500 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">D mano en mano</h3>
-                    <img src="../assets/img/Shops/t13.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/ZpjJ8qq8P3Hm9J3G9" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">D mano en mano</h3>
+                    <img src="../assets/img/Shops/t13.jpg" alt="Logo D mano en mano" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/ZpjJ8qq8P3Hm9J3G9" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/d_manoenmano?igsh=bW42YXI5MGdqZ2Rt" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/d_manoenmano?igsh=bW42YXI5MGdqZ2Rt" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Tienda look casual -->
-                <div class="bg-gray-300 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Tienda look casual</h3>
-                    <img src="../assets/img/Shops/t7.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/fbB2y2NmzKFT9X2N6" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda look casual</h3>
+                    <img src="../assets/img/Shops/t7.jpg" alt="Logo Tienda look casual" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center">
+                        <a href="https://maps.app.goo.gl/fbB2y2NmzKFT9X2N6" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Tienda C&M Avant-Garde -->
-                <div class="bg-pink-200 shop-card rounded-2xl p-6 flex flex-col items-start space-y-5 max-w-sm">
-                    <h3 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Tienda C&M Avant-Garde</h3>
-                    <img src="../assets/img/Shops/t14.jpg" alt="Logo Tienda E& S" class="shop-logo mx-auto">
-                    <div class="flex space-x-5 justify-center w-full">
-                        <a href="https://maps.app.goo.gl/Yz2cttFokz8Bozbc8" target="_blank" aria-label="Ver ubicación en Google Maps"
-                            class="icon-btn bg-blue-100 text-blue-600 p-4 rounded-full">
+                <div class="text-center bg-white rounded-2xl shadow-lg p-6 border border-gray-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda C&M Avant-Garde</h3>
+                    <img src="../assets/img/Shops/t14.jpg" alt="Logo Tienda C&M Avant-Garde" class="shop-logo mx-auto mb-4 rounded-md">
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://maps.app.goo.gl/Yz2cttFokz8Bozbc8" target="_blank" class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fas fa-map-marker-alt text-2xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/cym_avantgarde?igsh=eGF0dzN6am5lbzRt" target="_blank" aria-label="Ver perfil en Instagram"
-                        class="bg-pink-100 text-pink-600 p-4 rounded-full hover:bg-pink-200 transition transform hover:scale-110 shadow-md">
+                        <a href="https://www.instagram.com/cym_avantgarde?igsh=eGF0dzN6am5lbzRt" target="_blank"
+                            class="p-4 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition">
                             <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
@@ -300,7 +294,7 @@
         <section class="text-center">
             <h2 class="text-3xl font-bold text-ulsa-gray mb-6">Consejos</h2>
             <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto text-justify">
-                💡 ¿Quieres vestir con más conciencia pero no sabes por dónde empezar? Haz clic en el botón de consejos y descubre ideas prácticas, sencillas y sostenibles que pueden transformar tu forma de consumir moda. Cada pequeño cambio cuenta, y tú puedes ser parte del impacto positivo.
+                ¿Quieres vestir con más conciencia pero no sabes por dónde empezar? Haz clic en el botón de consejos y descubre ideas prácticas, sencillas y sostenibles que pueden transformar tu forma de consumir moda. Cada pequeño cambio cuenta, y tú puedes ser parte del impacto positivo.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="./consejos.html" class="border-2 border-ulsa-green text-ulsa-green px-8 py-3 rounded-lg font-semibold hover:bg-ulsa-green hover:text-white transition-colors">
@@ -331,6 +325,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../assets/js/config.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>

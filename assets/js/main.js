@@ -421,3 +421,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach((card) => observer.observe(card));
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  AOS.init({
+    duration: 900, // duración de la animación en ms
+    easing: 'ease-in-out',
+    once: false, // se anima cada vez que aparece en pantalla
+  });
+});

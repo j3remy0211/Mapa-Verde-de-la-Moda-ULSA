@@ -1,6 +1,6 @@
 # Mapa Verde de la Moda — ULSA 🌿
 
-Este repositorio contiene el sitio web del proyecto **"Vístete con Conciencia"**, desarrollado por estudiantes de la Universidad La Salle (ULSA) en León, Nicaragua. El objetivo es promover la moda sostenible a través de recursos educativos, mapas colaborativos y participación comunitaria.
+Este repositorio contiene el sitio web del proyecto **"Vístete con Conciencia"**, desarrollado por estudiantes de la Universidad Tecnológica La Salle (ULSA) en León, Nicaragua. El objetivo es promover la moda sostenible a través de recursos educativos, Vídeos relacionados al FastFashion, Imágenes, Mapa con tiendas seleccionadas porque están unidas a la causa y una pequeña Guía (Ebook) en formato PDF que contiene consejos para vestir de una forma sostible y ayudar a nuestro planeta.
 
 ---
 
